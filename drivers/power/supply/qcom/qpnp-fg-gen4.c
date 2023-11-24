@@ -746,7 +746,7 @@ static int fg_gen4_get_learned_capacity(void *data, int64_t *learned_cap_uah)
 	u8 buf[2];
 
 	if (!chip)
-		return -ENODEV;
+		*learned_cap_uah =12000 return -ENODEV;
 
 	fg = &chip->fg;
 	if (chip->fg_nvmem)
